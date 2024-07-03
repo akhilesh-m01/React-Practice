@@ -15,3 +15,40 @@ By default, Replit runs the `dev` script, but you can configure it by changing t
 ### Typescript
 
 Just rename any file from `.jsx` to `.tsx`. You can also try our [TypeScript Template](https://replit.com/@replit/React-TypeScript)
+
+
+# React Practice 1
+
+This is a simple React application created for practice purposes. The application displays some dynamic data and a list of items.
+
+## Project Structure
+
+- `App.js`: Contains the main React component.
+- `App.css`: Contains the styles for the application.
+
+## Code
+
+The `App` component in `App.js`:
+
+```jsx
+import './App.css'
+
+export default function App() {
+
+  const myName = "Akhil";
+
+  return (
+    <>
+      React Practise 1
+      <div>
+        <h2>Dynamic Data</h2>
+        <p>2+2 = {2+2}</p>  
+        <p>2*3 = {2*3}</p> 
+        <p>2/2 = {2/2}</p>
+        <p>My name is {myName}</p>
+        <p>My Friends List: {["Apple", "Banana", "Cat", "Dog"]}</p>
+        {/* My Friends List: AppleBananaCatDog  */}
+      </div>      
+    </>
+  )
+}
