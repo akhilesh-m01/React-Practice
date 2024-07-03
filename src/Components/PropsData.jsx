@@ -1,23 +1,47 @@
 import React from 'react';
 
 
-function EmployeeData(props){
+// function EmployeeData(props){
+//   return(
+//     <>
+//       <p>
+//         <h2>{props.name}</h2>
+//         <p>
+//           <b>Org: </b>
+//           {props.org}
+//         </p>
+//         <p>
+//           <b>Experience: </b>
+//           {props.exp}
+//         </p>
+//         <p>
+//           <b>City:</b>
+//           {props.city}{" "}
+//           {props.zipCode}
+//         </p>
+//       </p>
+//     </>
+//   )
+// }
+
+// destructuring the props
+function EmployeeData({name,org,exp,city,zipCode}){
   return(
     <>
       <p>
-        <h2>{props.name}</h2>
+        <h2>{name}</h2>
         <p>
           <b>Org: </b>
-          {props.org}
+          {org}
         </p>
         <p>
           <b>Experience: </b>
-          {props.exp}
+          {exp}
         </p>
         <p>
           <b>City:</b>
-          {props.city}{" "}
-          {props.zipCode}
+          {city}{" "}
+          {zipCode}
         </p>
       </p>
     </>
